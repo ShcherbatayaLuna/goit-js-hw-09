@@ -2,6 +2,8 @@ const startBtn = document.querySelector('[data-start]');
 const stopBtn = document.querySelector('[data-stop]');
 const bodyEl = document.querySelector('body');
 
+let timerId = null;
+
 startBtn.addEventListener('click', () => {
   timerId = setInterval(() => {
     bodyEl.style.backgroundColor = getRandomHexColor();
