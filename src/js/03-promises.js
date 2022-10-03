@@ -13,7 +13,7 @@ function startCreatePromise(event) {
   let stepFirst = Number(step.value);
   let amountProm = Number(amount.value);
 
-  for (let i = 0; i < amountProm; i += 1) {
+  for (let i = 1; i <= amountProm; i += 1) {
     createPromise(i, delayFirst).then(onSuccess).catch(onError);
     delayFirst += stepFirst;
   }
