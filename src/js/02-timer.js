@@ -19,9 +19,9 @@ const options = {
 
     if (selectedDates[0] < defaultDate) {
       Notify.failure('Please choose a date in the future');
+    } else {
+      startBtn.disabled = false;
     }
-    console.log(selectedDates[0]);
-    startBtn.disabled = false;
   },
 };
 
